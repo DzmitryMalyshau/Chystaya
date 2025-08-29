@@ -1061,6 +1061,11 @@ footer {
     .contacts_map-widget {
         gap: 10px;
     }
+
+    .contacts p {
+        text-align: center;
+    }
+
     .widget-map iframe {
         height: 120px !important;
     }
@@ -1744,8 +1749,9 @@ footer {
     .contacts_map-widget {
         gap: 10px;
     }
+
     .widget-map iframe {
-        height: 120px !important;
+        height: 200px !important;
     }
     .oferta {
         font-size: 1rem;
@@ -1914,7 +1920,7 @@ footer {
         gap: 10px;
     }
     .widget-map iframe {
-        height: 120px !important;
+        height: 400px !important;
     }
     .oferta {
         font-size: 1rem;
@@ -2137,7 +2143,7 @@ footer {
         gap: 10px;
     }
     .widget-map iframe {
-        height: 120px !important;
+        height: 300px !important;
     }
     .oferta {
         font-size: 1rem;
