@@ -141,15 +141,15 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img loading="eager" src="/img/slider/photo2.PNG" style="width:100%">
+                    <img loading="eager" src="img/slider/photo2.PNG" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img loading="eager" src="/img/slider/photo3.PNG" style="width:100%">
+                    <img loading="eager" src="img/slider/photo3.PNG" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img loading="eager" src="/img/slider/photo4.PNG" style="width:100%">
+                    <img loading="eager" src="img/slider/photo4.PNG" style="width:100%">
                 </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -178,19 +178,268 @@
                         <ul>
                             <li>
                                 <a target="_blank" href="https://t.me/katyachystaya">
-                                    <img src="/img/telegram.svg" alt="">
+                                    <img src="img/telegram.svg" alt="">
                                     Katsiaryna Chystaya
                                 </a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.instagram.com/katya.chystaya?igsh=aWlzNTFzb2pucHI4">
-                                    <img src="/img/instagram.svg" alt="">
+                                    <img src="img/instagram.svg" alt="">
                                     Katsiaryna Chystaya
                                 </a>
                             </li>
                             <li>
                                 <a href="tel:+375445370747">
-                                    <img src="/img/phone.svg" alt="">
+                                    <img src="img/phone.svg" alt="">
+                                    +375 (44) 537-07-47
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget-map" style="position:relative;overflow:hidden;padding:0;"><a href="https://yandex.by/maps/org/gym24/36882643872/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Gym24</a><a href="https://yandex.by/maps/157/minsk/category/sports_hall_gym/41430094175/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спортивный, тренажёрный зал в Минске</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.564936%2C53.916105&mode=poi&poi%5Bpoint%5D=27.564544%2C53.916229&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D36882643872&z=18.65" width="350" height="350" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+                <button class="oferta">
+                    <a target="_blank" href="https://drive.google.com/file/d/14mIGEkgi62Gad7jZoZ7Wo3PRr4R4JIeS/view">
+                        ДОГОВОР ОФЕРТЫ
+                    </a>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+          Индивидуальный предприниматель <br><strong>Чистая Екатерина Никитична</strong>
+        </p>
+        <p>
+            Свидетельство о государственной регистрации
+            от <strong>19.02.2024 <br> № 491568769 </strong>
+        </p>
+        <p style="margin-bottom: 10px;">
+            Выдано Мозырским районным исполнительным комитетом <br>
+            <strong>УНП 491568769</strong>
+        </p>
+        <p>
+            Связаться со мной <br>
+            <strong><a href="tel:+375445370747">+375 (44) 537-07-47</a></strong>
+        </p>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // ...existing code for slider...
+
+        // burger menu logic
+        const btnBurger = document.querySelector('.btn-burger');
+        const burgerMenu = document.querySelector('.burger-menu');
+        if (btnBurger && burgerMenu) {
+            btnBurger.addEventListener('click', function() {
+                burgerMenu.classList.toggle('open');
+                btnBurger.classList.toggle('open');
+            });
+            burgerMenu.querySelectorAll('.nav-mobile a').forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerMenu.classList.remove('open');
+                    btnBurger.classList.remove('open');
+                });
+            });
+        }
+    });
+</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Екатерина Чистая</title>
+    <script>
+        let slideIndex = 1;
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlides(slideIndex);
+        });
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h2>ЕКАТЕРИНА ЧИСТАЯ</h2>
+        <nav class="nav-desktop">
+            <a href="#about">Обо мне</a>
+            <a href="#services">Услуги</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <button class="btn-burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="burger-menu">
+            <nav class="nav-mobile">
+                <a href="#about">Обо мне</a>
+                <a href="#services">Услуги</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+
+    
+    </header>
+    <main>
+        <section class="section-main">
+            <div class="main-info">
+                <div class="main-paragraph">
+                    <p>Персональный фитнес-тренер</p>
+                </div>
+                <div>
+                    <h4>Стань лучшей версией себя!</h4>
+                </div>
+            </div>
+            <img draggable="false" src="img/main-photo.png" alt="">
+            <div class="golden-spray-wrapper"></div>
+        </section>
+        <section id="about" class="section-about"> 
+            <div class="header-about">
+                <h5>ОБО МНЕ</h5>
+            </div>
+            <div class="content-about">
+                <p class="about-first">Привет! Я — Екатерина, твой будущий фитнес-тренер</p>
+                <p class="about-second">
+                    Более 15 лет профессионального спорта доказали мне, 
+                    что здоровье - это красота, сила и уверенность в себе
+                </p>
+                <ul>
+                    <li>
+                        <img src="img/first.svg" alt="">
+                        <p>Мастер спорта международного класса по шорт-треку</p>
+                    </li>
+                    <li>
+                        <img src="img/second.svg" alt="">
+                        <p>Многократная чемпионка и рекордсменка Республики Беларусь</p>
+                    </li>
+                    <li>
+                        <img src="img/third.svg" alt="">
+                        <p>Участница чемпионатов Европы и мира</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="services" class="section-services">
+            <div class="header-services">
+                <h5>УСЛУГИ</h5>
+            </div>
+            
+            <div class="content-services">
+
+                <div class="services-1">
+                    <p>Персональные тренировки в тренажерном зале</p>
+                </div>
+
+                <div class="services-2">
+                    <p>Постановка техники выполнения упражнений</p>
+                </div>
+
+                <div class="services-3">
+                    <p>Коррекция фигуры в соответствии с вашими целями</p>
+                </div>
+
+                <div class="services-4">
+                    <p>Составление тренировочных программ</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="section-gallery">
+            <div class="header-gallery">
+                <h5>ГАЛЕРЕЯ</h5>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img loading="eager" src="img/slider/photo2.PNG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img loading="eager" src="img/slider/photo3.PNG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img loading="eager" src="img/slider/photo4.PNG" style="width:100%">
+                </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section id="contacts" class="section-contacts">
+            <div class="header-contacts">
+                <h5>КОНТАКТЫ</h5>
+            </div>
+
+            <div class="content-contacts">
+                <div class="contacts-header">
+                    <p>Адрес, где я тренирую: г. Минск, пр-т Машерова, д 17 к 3</p>
+                </div>
+                <div class="contacts_map-widget">
+                    <div class="contacts">
+                        <p style="margin-bottom: 20px;">Остались вопросы? <br> Свяжитесь со мной!</p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://t.me/katyachystaya">
+                                    <img src="img/telegram.svg" alt="">
+                                    Katsiaryna Chystaya
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/katya.chystaya?igsh=aWlzNTFzb2pucHI4">
+                                    <img src="img/instagram.svg" alt="">
+                                    Katsiaryna Chystaya
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+375445370747">
+                                    <img src="img/phone.svg" alt="">
                                     +375 (44) 537-07-47
                                 </a>
                             </li>
