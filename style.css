@@ -21,6 +21,10 @@ h2 {
     user-select: none;
 }
 
+.contacts p {
+        text-align: center;
+}
+
 .burger-menu {
     display: none;
 }
