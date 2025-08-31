@@ -485,45 +485,6 @@ footer {
   to {opacity: 1}
 }
 
-/* ====== Responsive Design ====== */
-/* @media (max-width: 1200px) {
-   .nav-desktop {
-        display: none;
-    }
-    .btn-burger {
-        display: flex;
-    }
-    .burger-menu {
-        display: block;
-    }
-    .header {
-        position: relative;
-    }
-
-    body {
-        width: 90%;
-    }
-    .slider,
-    .slideshow-container,
-    .slides,
-    .slide,
-    .mySlides img {
-        width: 100%;
-        min-width: unset;
-        max-width: 100%;
-    }
-    .slider,
-    .slideshow-container {
-        height: 220px;
-    }
-    .slide,
-    .mySlides {
-        height: 220px;
-    }
-} */
-
-
-
 @media (max-width: 900px) {
    .nav-desktop {
         display: none;
