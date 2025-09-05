@@ -183,8 +183,6 @@ section div:last-child, .section-main {
     transform: scale(1.1);
 }
 
-
-
 .main-paragraph {
     user-select: none;
     font-size: clamp(16px, 5vw, 32px);
@@ -251,7 +249,7 @@ li {
 .content-services {
     padding: 15%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-rows: repeat(2, 1fr);  
     gap: 15px;
     justify-items: center;
@@ -265,8 +263,9 @@ li {
     border-radius: 20px;
     text-align: center;
     width: 95%;
-    height: 130px;  
-    display: flex;   
+    height: 2000px;  
+    display: flex;
+    flex-direction: column;   
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -819,7 +818,7 @@ footer {
 /* Для плиток услуг на всех разрешениях */
 .content-services div {
     min-height: 130px;
-    height: 130px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1293,7 +1292,7 @@ li {
     padding: 15%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);  
+    /* grid-template-rows: repeat(2, 1fr);   */
     gap: 15px;
     justify-items: center;
     align-items: center;
